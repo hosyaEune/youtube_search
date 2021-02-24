@@ -1,0 +1,28 @@
+.btn{
+    background: $generalColor;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: $duration;
+
+    &:hover{
+        background: darken($generalColor, 5%);
+    }
+
+    &.disabled{
+        color: $generalColor;
+        border: 1px solid $generalColor;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    &.m{
+        width: 176px;
+        height: 52px;
+    }
+}

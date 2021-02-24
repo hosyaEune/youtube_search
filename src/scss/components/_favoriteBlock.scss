@@ -1,0 +1,58 @@
+.favorite_block {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 47px;
+
+    padding: 20px 13px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    transition: $duration;
+
+    & + & {
+        border-top: 1px solid #E5E5E5;
+    }
+
+    &:hover {
+        background: #F1F1F1;
+        background-blend-mode: multiply;
+
+        .favorite_block__btns{
+            display: flex;
+        }
+    }
+
+    &__title{
+        cursor: pointer;
+    }
+
+    &__btns{
+        display: none;
+        width: 200px;
+        justify-content: space-around;
+    }
+
+    &__btn{
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &.blue{
+            color: $generalColor;
+        }
+
+        &.red{
+            color: red;
+        }
+    }
+}

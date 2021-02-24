@@ -1,0 +1,47 @@
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 510px;
+    height: 520px;
+    background-color: #fff;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+        label{
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(23, 23, 25, 0.3);
+            font-weight: normal;
+            width: 100%;
+
+            .password__input{
+                position: relative;
+
+                .heart{
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    right: 15px;
+                    cursor: pointer;
+                    background: url('../../static/imgs/eye-off.svg');
+                    height: 24px;
+                    width: 24px;
+        
+                    &.active{
+                        background: url('../../static/imgs/eye-on.svg');
+                    }
+                }
+            }
+        }
+
+        button{
+            margin-top: 20px;
+        }
+    }
+}

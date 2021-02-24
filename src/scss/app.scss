@@ -1,0 +1,46 @@
+@import './variable';
+@import './normalize';
+@import './all';
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.req_star{
+    color: red
+}
+
+.container{
+    display: flex;
+    justify-content: center; //выравнивает по горизонтали
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+
+    // vertical center
+    &.vc{
+        height: calc(100vh - 157px);
+    }
+
+    &.content{
+        height: 100vh;  
+    }
+}
+
+input{
+    border: 1px solid rgba(23, 23, 25, 0.2);
+    border-radius: 5px;
+    padding: 12px 14px;
+    width: 100%;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    &:focus{
+        outline: none;
+        background: rgba(197, 228, 249, 0.3);
+    }
+}

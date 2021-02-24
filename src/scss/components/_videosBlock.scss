@@ -1,0 +1,42 @@
+.videosBlock{
+    margin-top: 40px;
+
+    &__filter_panel{
+        display: flex;
+        justify-content: space-between;
+
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    &__view_switcher{
+        span{
+            svg{
+                stroke: #272727;
+                opacity: 0.3;
+                cursor: pointer;
+            }
+
+            &.active{
+                svg{
+                    opacity: 1;
+                }
+            }
+        }
+        
+    }
+
+    .items{
+        display: flex;
+    
+        &.grid{
+            flex-wrap: wrap;
+        }
+        &.list{
+            flex-direction: column;
+        }
+    }
+}
